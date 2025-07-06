@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciamento de Tarefas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>Gerenciamento de Tarefas</h1>
+
+  <!-- Seção para adicionar nova tarefa -->
+  <section>
+    <label for="descricaoTarefa">Descrição da Tarefa:</label>
+    <input type="text" id="descricaoTarefa" placeholder="Ex: Concluir relatório">
+    <button id="adicionarBtn">Adicionar Tarefa</button>
+  </section>
+
+  <!-- Seção da tabela de tarefas -->
+  <section>
+    <h2>Lista de Tarefas</h2>
+
+    <!-- Filtro de visualização -->
+    <label for="filtro">Filtrar:</label>
+    <select id="filtro">
+      <option value="todas">Todas</option>
+      <option value="pendentes">Pendentes</option>
+      <option value="concluidas">Concluídas</option>
+    </select>
+
+    <table id="tabelaTarefas">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descrição</th>
+          <th>Início</th>
+          <th>Conclusão</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Tarefas serão renderizadas aqui -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
